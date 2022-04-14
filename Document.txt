@@ -1,0 +1,146 @@
+SELECT * FROM staff LEFT JOIN staff_payments ON staff.id = staff_payments.staff_id WHERE 1 GROUP BY `staff_payments`.`staff_id` ASC 
+
+SELECT staff.full_name, staff_payments.amount FROM staff LEFT JOIN staff_payments ON staff.id = staff_payments.staff_id 
+
+
+Room type
+https://setupmyhotel.com/train-my-hotel-staff/front-office-training/96-room-type-definitions-in-hotels.html
+
+http://localhost/Hotel-Management-System-in-Laravel-8-MySQL-and-Bootstrap-5/admin/login
+
+icons
+
+#####Installation Via Composer
+composer create-project laravel/laravel example-app
+ 
+cd example-app
+ 
+php artisan serve
+#################
+composer global require laravel/installer
+ 
+laravel new example-app
+ 
+cd example-app
+ 
+php artisan serve
+
+
+
+
+
+composer install
+
+composer update
+php artisan migrate
+   
+Create storage link
+
+php artisan storage:link
+
+Run Server
+php artisan serve
+Visit localhost:8000 in your browser
+
+
+
+
+#(Model&Controller Make)
+php artisan make:migration create_categories_table --create=categories
+#controller and model make(For)
+php artisan make:controller StaffDepartmentController --model=Department
+php artisan make:controller StaffController --model=Staff
+
+
+#(Only Model Make)
+php artisan make:model Booking -m
+php artisan make:controller  BookingController -r
+
+
+#(Only ControllerMake)
+php artisan make:controller  HomeController
+
+
+
+
+#(Migration DB Tble Make)
+php artisan make:migration create_clients_table --create=clients
+php artisan make:migration create_products_table --create=products
+php artisan make:migration create_brands_table --create=brands
+php artisan make:migration create_subcategories_table --create=subcategories
+#controller and model make(For)
+php artisan make:controller ClientController --model=Client
+php artisan make:controller ProductController --model=Product
+php artisan make:controller BrandController --model=Brands
+php artisan make:controller InvoiceController --model=Invoice
+php artisan make:controller SubcategoriesController --model=Subcategories
+
+
+
+php artisan make:migration create_departments_table --create=departments
+php artisan make:migration create_staff_table --create=staff
+php artisan make:migration create_staff_payments_table --create=staff_payments
+
+
+
+landing page kono kaj takle den den ...
+
+
+
+
+php artisan make:migration create_posts_table --create=posts
+php artisan make:model Post -m
+php artisan make:controller  PostController
+
+
+
+
+
+
+
+
+
+# Technologies
+---------------
+ - Laravel 8
+ - MySQL
+ - Bootstrap 5
+ - Jquery 3
+ - Stripe Payment Gateway
+
+# Panels
+---------------
+ 1. Website
+ 2. Admin Panel
+
+# Website
+---------------
+ - Home Page
+ - Gallery Page
+ - Services
+ - About Us Page
+ - Testimonials
+  - Customer can add testimonial after login
+  - Only show when admin approve
+ - Booking Page
+ - Contact Page
+
+# Admin Panel
+ - Login
+ - Forget Password/Reset Password
+ - Manage Website content
+  - Home Page Content
+  - Gallery
+  - About Us Content
+  - Contact Enquiry
+  - Testimonials
+  - Services
+ - Manage Room Categories - done
+ - Manage Rooms - done
+ - Manage Bookings - done
+ - Manage Staff - done
+ - Manage Salary of staff - done
+ - Manage Customers - done
+ - Manage Payments of Customers
+
+##  Tutorials   
